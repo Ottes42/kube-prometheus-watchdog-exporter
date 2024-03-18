@@ -30,7 +30,6 @@ app.get('/metrics', (req, res) => {
   res.end(strings.join('\n'))
 })
 
-const PORT = process.env.PORT || 8080
-app.listen(PORT, () => {
-  console.log('Server Listening on PORT:', PORT)
-})
+app.listen(process.env.PORT || 8080, () => {})
+process.on('SIGTERM', () => process.exit())
+process.on('SIGINT', () => process.exit())

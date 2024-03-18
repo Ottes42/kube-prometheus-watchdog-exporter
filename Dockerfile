@@ -9,5 +9,5 @@ WORKDIR /app
 COPY ["package.json", "package-lock.json*", "/app/"]
 RUN apk add --no-cache bash && npm install --omit-dev
 
-COPY redirector.js /app/
+COPY watchdog.js /app/
 CMD [ "node", "watchdog.js" ]
