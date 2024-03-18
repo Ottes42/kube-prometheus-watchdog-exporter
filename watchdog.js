@@ -11,6 +11,10 @@ watchdog_lastping{cluster="swissmedia-gra7"} 1631530000000
 watchdog_lastping{cluster="swissmedia-sbg5"} 1631530000000
 */
 
+app.get('/health', (req, res) => {
+  res.end('ok')
+})
+
 app.get('/ping/:cluster', (req, res) => {
   const { cluster } = req.params
   lastPings[cluster] = Date.now()
