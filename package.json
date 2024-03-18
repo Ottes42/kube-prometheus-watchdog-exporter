@@ -1,0 +1,19 @@
+{
+  "name": "kube-prometheus-watchdog-exporter",
+  "version": "0.1.0",
+  "description": "a simple webservice, that receives pings via webhooks and exports metrics for prometheus for watchdog monitoring",
+  "main": "watchdog.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ottes42/kube-prometheus-watchdog-exporter.git"
+  },
+  "author": "Michael Freund <ottes@ottes.club>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Ottes42/kube-prometheus-watchdog-exporter/issues"
+  },
+  "homepage": "https://github.com/Ottes42/kube-prometheus-watchdog-exporter#readme"
+}
